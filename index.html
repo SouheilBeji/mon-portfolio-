@@ -1,21 +1,131 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; margin: 50px; }
-        h1 { color: #333; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
-        a { display: block; margin-top: 20px; font-size: 18px; text-decoration: none; color: #007BFF; }
-    </style>
+    <title>Portfolio Professionnel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <p>Je suis un ingénieur passionné par le développement et la conception.</p>
-        <a href="projects.html">Voir mes projets</a>
-    </div>
+    <!-- Header avec navigation -->
+    <header>
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Mon Nom</h1>
+            <p class="animate__animated animate__fadeInUp">Développeur Full Stack | Designer UI/UX</p>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#skills" class="nav-link">Compétences</a></li>
+                    <li><a href="#projects" class="nav-link">Projets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about" class="section animate__animated">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Ma photo de profil" class="profile-img animate__animated animate__fadeInLeft">
+                <p class="animate__animated animate__fadeInRight">
+                    Passionné par le développement web et le design, je crée des solutions numériques modernes et performantes. Avec plus de 5 ans d'expérience, j'ai travaillé sur des projets variés, allant des sites vitrines aux applications web complexes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Mes Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill animate__animated">
+                    <i class="fas fa-code"></i>
+                    <h3>Développement Web</h3>
+                    <p>HTML, CSS, JavaScript, React, Node.js</p>
+                </div>
+                <div class="skill animate__animated">
+                    <i class="fas fa-palette"></i>
+                    <h3>Design UI/UX</h3>
+                    <p>Figma, Adobe XD, Prototypage</p>
+                </div>
+                <div class="skill animate__animated">
+                    <i class="fas fa-database"></i>
+                    <h3>Bases de Données</h3>
+                    <p>MySQL, MongoDB, Firebase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project animate__animated">
+                    <img src="project1.jpg" alt="Projet 1">
+                    <h3>Site E-commerce</h3>
+                    <p>Un site e-commerce complet avec panier et paiement en ligne.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+                <div class="project animate__animated">
+                    <img src="project2.jpg" alt="Projet 2">
+                    <h3>Application de Gestion</h3>
+                    <p>Une application web pour la gestion des tâches et des projets.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+                <div class="project animate__animated">
+                    <img src="project3.jpg" alt="Projet 3">
+                    <h3>Portfolio Artistique</h3>
+                    <p>Un portfolio interactif pour un artiste local.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <form id="contact-form" class="animate__animated">
+                <div class="form-group">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2023 Mon Nom. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
